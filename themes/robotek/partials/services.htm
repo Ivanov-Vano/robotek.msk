@@ -1,0 +1,28 @@
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "service"
+postsPerPage = 5
+noPostsMessage = "Записей не найдено"
+sortOrder = "published_at desc"
+categoryPage = "home"
+postPage = "post"
+==
+
+{% set services = blogPosts.posts %}
+<div class="services">
+    {% for service in services %}
+    <div class="services__item  services__item--border">
+        {% for image in service.featured_images|slice(0,1) %}
+        <img class="services__icon" src="{{ image.path}}" alt="{{ post.title}}">
+        {% endfor %}
+
+        <div class="services__title">
+            <a href="{{ service.url }}">{{ service.title }}</a>
+        </div>
+        <div class="services__text">{{ service.excerpt }}</div>
+    </div>
+    {% else %}
+        {{ noPostMessage }}
+    {% endfor %}
+
+</div>
