@@ -13,8 +13,8 @@ jobs:
             # Setup key
             - run: set -eu
             - run: mkdir "$HOME/.ssh"
-            - run: echo "${{ secrets.My key from docker-hosting }}" > "$HOME/.ssh/key"
-            - run: chmod 600 "$HOME/.ssh/key"
+            - run: echo "${{ secrets.key_dockerhosting }}" > "$HOME/.ssh"
+            - run: chmod 600 "$HOME/.ssh"
             # Build
             - run: npm ci
             - run: npm run build
