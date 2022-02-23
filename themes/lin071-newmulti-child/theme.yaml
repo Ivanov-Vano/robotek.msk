@@ -1,0 +1,15 @@
+name: Robotek
+description: 'Сайт компании Роботек Москва'
+author: Ivanov-Vano
+homepage: ''
+authorCode: ''
+code: Robotek
+parent: lin071-newmulti
+database: '0'
+authorUrl: 'http://shapebootstrap.net/'
+form:
+    fields:
+        site_name:
+            label: 'Сайт компании Роботек Москва'
+            comment: ''
+            default: NewMulti

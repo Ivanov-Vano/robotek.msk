@@ -1,0 +1,14 @@
+name: NewMulti
+code: NewMulti
+description: One page multipurpose Bootstrap powered theme, ported for OctoberCMS for Robotek_msk corporate site
+author: lin071
+authorUrl:
+
+# [...]
+
+form:
+    fields:
+        site_name:
+            label: Robotek_msk
+            comment: The website name as it should appear on the front-end
+            default: NewMulti
